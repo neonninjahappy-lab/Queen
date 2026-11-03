@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #0e0e10;
+  color: #efeff1;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #242426;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav a {
+  color: #aaa;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 13px;
+}
+
+.hero {
+  padding: 75px 20px 55px;
+  max-width: 750px;
+  margin: auto;
+}
+
+.tag {
+  color: #bf94ff;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-size: clamp(36px, 8vw, 58px);
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+h1 span {
+  color: #bf94ff;
+}
+
+.hero p {
+  color: #aaa;
+  line-height: 1.7;
+  max-width: 450px;
+  font-size: 15px;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 20px;
+  background: #bf94ff;
+  color: #0e0e10;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+section {
+  max-width: 750px;
+  margin: auto;
+  padding: 25px 20px;
+}
+
+h2 {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.card {
+  background: #18181b;
+  border: 1px solid #29292d;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 13px;
+  color: #999;
+  line-height: 1.6;
+}
+
+.card .type {
+  color: #bf94ff;
+  font-size: 11px;
+  margin-bottom: 12px;
+}
+
+footer {
+  text-align: center;
+  padding: 35px 20px;
+  margin-top: 40px;
+  border-top: 1px solid #242426;
+  color: #777;
+  font-size: 12px;
+}
+
+@media(max-width: 450px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+
+<nav>
+  <div class="logo">Portfolio.</div>
+  <div>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+</body>
